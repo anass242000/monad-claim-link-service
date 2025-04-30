@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monad Claim Link Service</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Monad Claim Link Service</h1>
+
+        <button id="connectWalletBtn">Connect Wallet</button>
+
+        <div id="walletInfo" class="hidden">
+            <p>Wallet Address: <span id="walletAddress"></span></p>
+            <p>Selected Token: <span id="selectedToken"></span></p>
+            <input type="number" id="amount" placeholder="Amount" />
+            <button id="createClaimLinkBtn">Create Claim Link</button>
+        </div>
+
+        <div id="claimSection" class="hidden">
+            <input type="text" id="claimLink" placeholder="Enter Claim Link" />
+            <button id="claimBtn">Claim Token</button>
+        </div>
+
+        <p id="statusMessage"></p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/ethers@5.7.0/dist/ethers.umd.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
